@@ -23,7 +23,7 @@
                     $canPick = false;
                     $name = 'Occupied';
                 }
-                if($seat->clan){
+                if(isset($seat->clan)){
                     if(in_array($seat->clanCode, $myClans)){
                         $class = 'seat-clan';
                         $name = 'Available';
